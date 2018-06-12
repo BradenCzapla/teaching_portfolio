@@ -8,20 +8,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Teaching Assistantships}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Mentoring}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}Mentorship}{2}{section.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {2}Teaching Statement}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {3}Diversity Statement}{4}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}Teaching Evaluations}{5}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}Teaching Evaluations}{6}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Summary of Numerical Scores}{5}{section.4.1}
+\contentsline {section}{\numberline {4.1}Summary of Numerical Scores}{6}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Summary of Written Feedback}{6}{section.4.2}
+\contentsline {section}{\numberline {4.2}Summary of Written Feedback}{7}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Unredacted Evaluations}{6}{section.4.3}
+\contentsline {section}{\numberline {4.3}Unredacted Evaluations}{7}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}Professional Development}{11}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}Professional Development}{12}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}Awards and Recognition}{12}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}Awards and Recognition}{13}{chapter.6}

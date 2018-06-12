@@ -1,20 +1,18 @@
 \documentclass[letterpaper,12pt, oneside]{memoir} %The memoir class is great for longer works that use separate chapters. The Dissertation Office recommends 10-pt Arial or 12-pt Times New Roman. I use 12-pt for readability.
 
-\usepackage[hidelinks]{hyperref} % This creates hyperlinks in the table of contents to each section.
-\hypersetup{colorlinks, allcolors=black} % This sets the color of all links to black
-
 \DisemulatePackage{setspace} %You need to use this package for "true MS Word" double-spacing.
 \usepackage{setspace} %Allows you to set different spacing (double, etc.) throughout your writing.
 \usepackage[fleqn]{amsmath}
 \usepackage{gensymb} % Gives more symbols
 
 \usepackage{enumitem} % To fix spacing of bullet point lists
-%\setlist{noitemsep} % or \setlist{nosep} for space around whole list
-\setitemize{itemsep=-1em,topsep=0em,parsep=0em,partopsep=0em}
+\setlist{noitemsep} % or \setlist{nosep} for space around whole list
 
 \usepackage[american]{babel} %Enables hyphenation and date formats according to American conventions. Change "american" to "british" (or another value) if you work outside the US.
 \usepackage[backend=bibtex8,style=ieee,texencoding=utf8,bibencoding=utf8]{biblatex} %The command here uses biblatex to render your bibliography, and it tells biblatex to use Unicode fonts. You can change the style of your citations easily by changing the value for "style" -- I use authoryear-icomp which takes care of the id/ibid citations automatically. There are many styles available if you want to change it.
 \usepackage{graphicx}
+
+%\usepackage[document]{ragged2e} % Allows me to justify text but messes with indenting.
 
 \usepackage[dvipsnames]{xcolor}
 
@@ -29,6 +27,13 @@
 
 \raggedbottom
 
+\usepackage{tikz}
+
+\usepackage[hidelinks]{hyperref} % This creates hyperlinks in the table of contents to each section.
+\hypersetup{colorlinks, allcolors=black} % This sets the color of all links to black
+\urlstyle{same}
+
+
 % Below we start to set up the document itself.
 \begin{document}
 \sloppy %If I don't include sloppy, then Greek and Latin words screw up margins all over.
@@ -37,7 +42,7 @@
 %\chapterstyle{ger}
 %\chapterstyle{thatcher}
 \footnotesep\baselineskip % Footnotes need to have a space between each one for Columbia's Dissertation Office. 
-\setstretch{2} %Set line spacing to "true MS Word" double-spacing
+\setstretch{1} %Set line spacing to "true MS Word" double-spacing
 %\DoubleSpace % Use LaTeX double-spacing (more like 1.666 spacing)
 
 \setlength\parindent{0pt} % Remove indentation at start of paragraphs
