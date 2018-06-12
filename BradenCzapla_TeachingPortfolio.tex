@@ -1,0 +1,78 @@
+\documentclass[letterpaper,12pt, oneside]{memoir} %The memoir class is great for longer works that use separate chapters. The Dissertation Office recommends 10-pt Arial or 12-pt Times New Roman. I use 12-pt for readability.
+
+\usepackage[hidelinks]{hyperref} % This creates hyperlinks in the table of contents to each section.
+\hypersetup{colorlinks, allcolors=black} % This sets the color of all links to black
+
+\DisemulatePackage{setspace} %You need to use this package for "true MS Word" double-spacing.
+\usepackage{setspace} %Allows you to set different spacing (double, etc.) throughout your writing.
+\usepackage[fleqn]{amsmath}
+\usepackage{gensymb} % Gives more symbols
+
+\usepackage{enumitem} % To fix spacing of bullet point lists
+%\setlist{noitemsep} % or \setlist{nosep} for space around whole list
+\setitemize{itemsep=-1em,topsep=0em,parsep=0em,partopsep=0em}
+
+\usepackage[american]{babel} %Enables hyphenation and date formats according to American conventions. Change "american" to "british" (or another value) if you work outside the US.
+\usepackage[backend=bibtex8,style=ieee,texencoding=utf8,bibencoding=utf8]{biblatex} %The command here uses biblatex to render your bibliography, and it tells biblatex to use Unicode fonts. You can change the style of your citations easily by changing the value for "style" -- I use authoryear-icomp which takes care of the id/ibid citations automatically. There are many styles available if you want to change it.
+\usepackage{graphicx}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{multirow}
+
+%Here you can set margins and other page formatting
+\setlrmarginsandblock{3.175cm}{3.175cm}{*} %Left and right margin -- the dissertation office requires at least 1-inch margins
+\setulmarginsandblock{2.54cm}{2.54cm}{*}  %Upper and lower margin -- same thing, at least 1-inch margins
+\checkandfixthelayout %A function of the memoir class that finds the right number of lines per page and apparently tidies up the formatting in other mysterious ways...?
+
+%\usepackage[final]{pdfpages}
+
+\raggedbottom
+
+% Below we start to set up the document itself.
+\begin{document}
+\sloppy %If I don't include sloppy, then Greek and Latin words screw up margins all over.
+% Nice formatting for chapter headings. Check out the documentation for the memoir class for other options.
+\chapterstyle{lyhne}
+%\chapterstyle{ger}
+%\chapterstyle{thatcher}
+\footnotesep\baselineskip % Footnotes need to have a space between each one for Columbia's Dissertation Office. 
+\setstretch{2} %Set line spacing to "true MS Word" double-spacing
+%\DoubleSpace % Use LaTeX double-spacing (more like 1.666 spacing)
+
+\setlength\parindent{0pt} % Remove indentation at start of paragraphs
+
+
+\expandafter\def\expandafter\quote\expandafter{\quote\SingleSpace} %Keep all block quotes single-spaced regardless of body text spacing.
+\pagestyle{plain} %Put page numbers at the bottom-center for the whole dissertation. Columbia's dissertation office requires that the numbers appear at this location on the page throughout the document.
+
+\renewcommand{\chaptername}{Section} % Rename chapters to sections
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Here's the Title Page
+\include{./FrontMatter/TitlePage}
+
+%% Here's the Executive Summary
+%\include{./FrontMatter/ExecutiveSummary}
+
+%% Here's the Methodology
+%\include{./FrontMatter/Methodology}
+
+
+\frontmatter
+\tableofcontents % You need to put your ToC after frontmatter so that it will get lowercase Roman numerals.
+
+% What follows is the main text of the document.
+\mainmatter
+
+%I use subdirectories for each part of my dissertation just to keep the files tidy. LaTeX generates a lot of different files for output, and using subdirectories allows you to find your .tex files more easily.
+
+\include{./Teaching_Experience/Teaching_Experience}
+\include{./Teaching_Statement/Teaching_Statement}
+\include{./Diversity_Statement/Diversity_Statement}
+\include{./Teaching_Evaluations/Teaching_Evaluations}
+\include{./Professional_Development/Professional_Development}
+\include{./Awards_and_Recognition/Awards_and_Recognition}
+
+\end{document}
